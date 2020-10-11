@@ -1,7 +1,15 @@
 import Foundation
 
-var a = readLine()
-var b = readLine()
+var a: String?
+var b: String?
 
-let result = sum(a, b)
-print("Сумма чисел: \(result)")
+repeat {
+    print("Enter numbers \"a\" and \"b\"")
+    print("a = ", terminator: "")
+    a = readLine()
+    print("b = ", terminator: "")
+    b = readLine()
+} while Int(a!) == nil || Int(b!) == nil
+
+let result = sum(a!, b!)
+print("Sum result: \(result)")
