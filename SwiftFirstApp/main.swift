@@ -1,11 +1,7 @@
-//
-//  main.swift
-//  SwiftFirstApp
-//
-//  Created by Башир on 11.10.2020.
-//
-
 import Foundation
 
-print("Hello, World!")
+var a = readLine()
+var b = readLine()
 
+let result = sum(a, b)
+print("Сумма чисел: \(result)")
